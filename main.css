@@ -363,6 +363,10 @@ padding-top: 10px;
         width: 6%;
         height: 70%;
     }
+    html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
     .end{
         margin-top: 50px;
     }
