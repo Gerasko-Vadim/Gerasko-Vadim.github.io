@@ -520,12 +520,40 @@ html {
   border-radius: 10px;
   font-size: 20px;
   color: black;
+  padding: 30px;
   display: flex;
-  position: relative;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  position: relative;
   z-index: 10;
+}
+.slide .content .tiopBlock {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.slide .content .title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
+  margin-top: 0px;
+}
+.slide .content .position {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+}
+.slide .content .description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #000000;
+  margin-top: 10px;
 }
 .slide .block1 {
   width: 500px;
@@ -891,6 +919,10 @@ h3 {
   .cards .wrapper__items2 {
     width: 70%;
   }
+
+  .question-answer .wrapper-quetion {
+    width: 80%;
+  }
 }
 @media only screen and (max-width: 1250px) {
   .cards .wrapper__items2 {
@@ -949,7 +981,7 @@ h3 {
     transform: translate(200px, 110px);
   }
 
-  .comparisonBlock__content:hover .comparisonBlock__left {
+  .comparisonBlock__content:hover .comparisonBlock__left, .comparisonBlock :focus .comparisonBlock__left {
     margin-left: 170px;
   }
 }
@@ -958,7 +990,7 @@ h3 {
     height: 470px;
   }
 
-  .comparisonBlock__content:hover .comparisonBlock__left {
+  .comparisonBlock__content:hover .comparisonBlock__left, .comparisonBlock :focus .comparisonBlock__left {
     margin-left: 270px;
   }
 }
@@ -971,7 +1003,7 @@ h3 {
   }
 }
 @media only screen and (max-width: 750px) {
-  .comparisonBlock__content:hover .comparisonBlock__left {
+  .comparisonBlock__content:hover .comparisonBlock__left, .comparisonBlock :focus .comparisonBlock__left {
     margin-left: 470px;
   }
 }
@@ -992,6 +1024,9 @@ h3 {
   .mySlides .content .block1, .mySlides .content .block2 {
     width: 300px;
   }
+  .mySlides .content .description {
+    font-size: 10px;
+  }
 
   .wrapper-slider .w3-display-right {
     transform: translate(-150px, 110px);
@@ -1000,7 +1035,7 @@ h3 {
     transform: translate(150px, 110px);
   }
 
-  .comparisonBlock__content:hover .comparisonBlock__left {
+  .comparisonBlock__content::focus .comparisonBlock__left, .comparisonBlock :hover .comparisonBlock__left {
     margin-left: 570px;
   }
 }
@@ -1069,6 +1104,9 @@ h3 {
     width: 90%;
     text-align: center;
   }
+  .cards .wrapper {
+    width: 100%;
+  }
   .cards .wrapper__items1, .cards .wrapper__items2 {
     flex-direction: column;
     align-items: center;
@@ -1078,6 +1116,11 @@ h3 {
   display: none;
 }
 
+@media only screen and (max-width: 400px) {
+  .footer .wrapper .right {
+    width: 90%;
+  }
+}
 @media only screen and (max-width: 500px) {
   .profit {
     height: auto;
