@@ -3,8 +3,8 @@
 
 const I18N = {
   ru: {
-    'meta.title': 'Вадим Гераско | Full-Stack разработчик — TypeScript, React, Next.js, NestJS',
-    'meta.description': 'Вадим Гераско — Full-Stack разработчик с 6 годами опыта в финтехе и банкинге. TypeScript, React, Next.js, Node.js, NestJS. Бишкек, готов к удалённой работе и релокации.',
+    'meta.title': 'Вадим Гераско | Full-Stack AI разработчик — TypeScript, React, Next.js, NestJS',
+    'meta.description': 'Вадим Гераско — Full-Stack AI разработчик с 6 годами опыта в финтехе и банкинге. TypeScript, React, Next.js, Node.js, NestJS. Бишкек, готов к удалённой работе и релокации.',
     cv: 'cv/Vadim_Gerasko_Full_Stack_Developer_CV_RU.pdf',
 
     'nav.about': 'Обо мне',
@@ -18,13 +18,13 @@ const I18N = {
     'hero.badge': 'Бишкек · Готов к удалёнке и релокации',
     'hero.hello': 'Привет, я',
     'hero.name': 'Вадим Гераско',
-    'hero.role': 'Full-Stack разработчик',
+    'hero.role': 'Full-Stack AI разработчик',
     'hero.desc': '6 лет создаю финтех- и банковские продукты. Основал сервисный стартап с геолокацией, который окупился за 2 месяца, руководил командой из 5 разработчиков в MBank и перестроил архитектуру B2B интернет-банкинга для Bereke Bank. Разрабатываю быстрее с помощью AI (Claude Code).',
     'hero.work': 'Смотреть опыт',
     'hero.cv': 'Скачать резюме',
 
     'about.title': 'Обо <span class="gradient-text">мне</span>',
-    'about.p1': 'Full-Stack разработчик с 6 годами опыта создания финтех- и банковских продуктов на TypeScript: React и Next.js на фронтенде, Node.js и NestJS на бэкенде. Основал собственный стартап и с нуля построил сервисную платформу с геолокацией: Telegram Mini Apps, Telegram-боты, бэкенд на NestJS и веб-приложение на Next.js; собственный алгоритм назначает каждый заказ ближайшему мастеру — 100 пользователей и окупаемость за 2 месяца.',
+    'about.p1': 'Full-Stack AI разработчик с 6 годами опыта создания финтех- и банковских продуктов на TypeScript: React и Next.js на фронтенде, Node.js и NestJS на бэкенде. Основал собственный стартап и с нуля построил сервисную платформу с геолокацией: Telegram Mini Apps, Telegram-боты, бэкенд на NestJS и веб-приложение на Next.js; собственный алгоритм назначает каждый заказ ближайшему мастеру — 100 пользователей и окупаемость за 2 месяца.',
     'about.p2': 'До этого руководил командой из 5 разработчиков в MBank (интернет-банкинг для юрлиц), а в Rocket Tech перестроил архитектуру B2B интернет-банкинга для Bereke Bank на Feature-Sliced Design и микрофронтенды, проектировал REST API-контракты и внедрил защиту платежей (OTP, электронная подпись).',
     'about.p3': 'Уверенно владею AI-assisted разработкой: работаю с <strong>Claude Code</strong> как с AI-напарником — так я выпустил весь стек City of Masters за 1 месяц — и интегрирую LLM в продукты (OpenAI API в MBank).',
     'stats.years': 'лет опыта',
