@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Vadim Gerasko | Full-Stack Developer — TypeScript, React, Next.js, NestJS</title>
+  <meta name="description" content="Vadim Gerasko — Full-Stack Developer with 6 years in fintech and banking. TypeScript, React, Next.js, Node.js, NestJS. Bishkek, open to remote and relocation.">
+  <meta name="author" content="Vadim Gerasko">
+  <meta name="theme-color" content="#0f172a">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vadim Gerasko | Full-Stack Developer">
+  <meta property="og:description" content="Full-Stack Developer with 6 years in fintech and banking: TypeScript, React, Next.js, Node.js, NestJS.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons (Lucide via CDN) -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">VG.</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+        <a href="#fit" class="nav-link" data-i18n="nav.fit">Who I Help</a>
+        <a href="#experience" class="nav-link" data-i18n="nav.experience">Experience</a>
+        <a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a>
+        <a href="#education" class="nav-link" data-i18n="nav.education">Education</a>
+        <a href="#contact" class="nav-link nav-link-active" data-i18n="nav.contact">Contact</a>
+        <a href="#contact" class="btn-hire" data-i18n="nav.hire">Hire Me</a>
+      </div>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+        <button type="button" class="lang-btn" data-lang="ru">RU</button>
+      </div>
+      <button class="nav-burger" id="navBurger" aria-label="Toggle menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+    <div class="nav-progress" id="navProgress"></div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-glow"></div>
+      <div class="section-container">
+        <div class="hero-inner">
+          <div class="hero-badge animate-fade-up">
+            <span class="status-dot"></span>
+            <span data-i18n="hero.badge">Bishkek · Open to remote &amp; relocation</span>
+          </div>
+
+          <h1 class="hero-title animate-fade-up delay-1">
+            <span data-i18n="hero.hello">Hello, I'm</span> <span class="gradient-text" data-i18n="hero.name">Vadim Gerasko</span>
+            <span class="hero-subtitle" data-i18n="hero.role">Full-Stack Developer</span>
+            <span class="hero-tech">TypeScript • React • Next.js • Node.js • NestJS</span>
+          </h1>
+
+          <p class="hero-desc animate-fade-up delay-2" data-i18n="hero.desc">
+            6 years building fintech and banking products. Founded a location-based service startup
+            that paid back its costs in 2 months, led a 5-developer team at MBank, and re-architected
+            B2B internet banking for Bereke Bank. I ship faster with AI-assisted development (Claude Code).
+          </p>
+
+          <div class="hero-actions animate-fade-up delay-3">
+            <a href="#experience" class="btn-primary" data-i18n="hero.work">View Experience</a>
+            <a href="cv/Vadim_Gerasko_Full_Stack_Developer_CV_EN.pdf" class="btn-outline" id="cvLink" target="_blank" rel="noopener" data-i18n="hero.cv">Download CV</a>
+          </div>
+
+          <div class="hero-socials animate-fade-up delay-4">
+            <a href="https://github.com/Gerasko-Vadim" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon">
+              <svg class="lucide lucide-github" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/vadim-gerasko/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon">
+              <svg class="lucide lucide-linkedin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://t.me/vadimgerasko" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="social-icon">
+              <i data-lucide="send"></i>
+            </a>
+            <a href="mailto:vadim.gerasko99@gmail.com" aria-label="Email" class="social-icon">
+              <i data-lucide="mail"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <i data-lucide="arrow-down"></i>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-container">
+        <div class="about-layout">
+          <div class="about-avatar animate-fade-up">
+            <div class="avatar-ring">
+              <img src="avatar.png" alt="Vadim Gerasko" class="avatar-img">
+            </div>
+          </div>
+
+          <div class="about-content animate-fade-up delay-1">
+            <h2 class="section-title" data-i18n="about.title">About <span class="gradient-text">Me</span></h2>
+            <p class="about-text" data-i18n="about.p1">
+              Full-Stack Developer with 6 years of experience building fintech and banking products in TypeScript —
+              React and Next.js on the frontend, Node.js and NestJS on the backend. I founded and built end to end a
+              location-based service platform for my own startup: Telegram Mini Apps, Telegram bots, a NestJS backend
+              and a Next.js web app, with a custom algorithm matching each order to the nearest master — 100 users and
+              payback within 2 months.
+            </p>
+            <p class="about-text" data-i18n="about.p2">
+              Before that I led a 5-developer team at MBank delivering internet banking for legal entities, and at
+              Rocket Tech re-architected B2B internet banking for Bereke Bank with Feature-Sliced Design and
+              microfrontends, co-designed its REST API contracts and implemented payment security flows (OTP, digital signing).
+            </p>
+            <p class="about-text" data-i18n="about.p3">
+              I'm fluent in AI-assisted development: I build with <strong>Claude Code</strong> as an AI pair programmer —
+              it's how I shipped the whole City of Masters stack in 1 month — and I integrate LLMs into products
+              (OpenAI API at MBank).
+            </p>
+
+            <div class="stats-grid">
+              <div class="stat-card">
+                <i data-lucide="code-xml" class="stat-icon"></i>
+                <div class="stat-num">6+</div>
+                <div class="stat-label" data-i18n="stats.years">Years Experience</div>
+              </div>
+              <div class="stat-card">
+                <i data-lucide="users" class="stat-icon"></i>
+                <div class="stat-num">5</div>
+                <div class="stat-label" data-i18n="stats.team">Developers Led</div>
+              </div>
+              <div class="stat-card">
+                <i data-lucide="zap" class="stat-icon"></i>
+                <div class="stat-num">9×</div>
+                <div class="stat-label" data-i18n="stats.ci">Faster CI Builds</div>
+              </div>
+              <div class="stat-card">
+                <i data-lucide="trending-up" class="stat-icon"></i>
+                <div class="stat-num" data-i18n="stats.paybackNum">2 mo</div>
+                <div class="stat-label" data-i18n="stats.payback">Startup Payback</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- WHO I HELP -->
+    <section id="fit" class="section section-alt">
+      <div class="section-container">
+        <div class="section-header animate-fade-up">
+          <h2 class="section-title" data-i18n="fit.title">Who I Can <span class="gradient-text">Help</span></h2>
+          <p class="section-subtitle" data-i18n="fit.subtitle">Teams that get the most out of my experience — full-time, remote or with relocation</p>
+        </div>
+
+        <div class="skills-grid fit-grid">
+          <div class="skill-card animate-fade-up">
+            <div class="skill-card-header">
+              <div class="skill-icon"><i data-lucide="landmark"></i></div>
+              <h3 data-i18n="fit.c1.title">Fintech &amp; banking</h3>
+            </div>
+            <p class="fit-text" data-i18n="fit.c1.text">Internet banking for businesses, payment security (OTP, digital signing, role-based access), real-time transaction updates and complex forms — I've built all of it at MBank and Bereke Bank.</p>
+          </div>
+
+          <div class="skill-card animate-fade-up delay-1">
+            <div class="skill-card-header">
+              <div class="skill-icon"><i data-lucide="rocket"></i></div>
+              <h3 data-i18n="fit.c2.title">Startups &amp; new products</h3>
+            </div>
+            <p class="fit-text" data-i18n="fit.c2.text">One engineer who takes a product from idea to production: frontend, NestJS backend, Telegram bots and Mini Apps, Docker deploy. My own startup paid back its costs in 2 months.</p>
+          </div>
+
+          <div class="skill-card animate-fade-up delay-2">
+            <div class="skill-card-header">
+              <div class="skill-icon"><i data-lucide="layers"></i></div>
+              <h3 data-i18n="fit.c3.title">Teams scaling a large frontend</h3>
+            </div>
+            <p class="fit-text" data-i18n="fit.c3.text">Feature-Sliced Design, microfrontends, 9× faster builds with Vite, testing culture and code review — plus experience leading a frontend team and interviewing candidates.</p>
+          </div>
+
+          <div class="skill-card animate-fade-up delay-3">
+            <div class="skill-card-header">
+              <div class="skill-icon"><i data-lucide="sparkles"></i></div>
+              <h3 data-i18n="fit.c4.title">Teams adopting AI</h3>
+            </div>
+            <p class="fit-text" data-i18n="fit.c4.text">Companies that want to ship faster with AI-assisted development (Claude Code) or add LLM-powered features to their product (OpenAI API).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section section-alt">
+      <div class="section-container">
+        <div class="section-header animate-fade-up">
+          <h2 class="section-title"><span class="gradient-text" data-i18n="exp.title">Experience</span></h2>
+          <p class="section-subtitle" data-i18n="exp.subtitle">Fintech, banking and my own startup</p>
+        </div>
+
+        <div class="timeline">
+
+          <!-- City of Masters -->
+          <div class="timeline-item animate-fade-up">
+            <div class="timeline-dot"></div>
+            <div class="exp-card">
+              <div class="exp-header">
+                <div class="exp-icon-wrap">
+                  <i data-lucide="map-pin"></i>
+                </div>
+                <div class="exp-meta">
+                  <h3 class="exp-title" data-i18n="com.role">Founder &amp; Full-Stack Developer</h3>
+                  <p class="exp-company" data-i18n="com.company">City of Masters · own startup</p>
+                  <p class="exp-period" data-i18n="com.period">December 2025 – Present</p>
+                </div>
+                <span class="exp-badge" data-i18n="badge.startup">Startup</span>
+              </div>
+              <p class="exp-project" data-i18n="com.project">
+                <strong>City of Masters</strong> — a service platform that connects clients with craftsmen in their city.
+              </p>
+              <div class="exp-achievement">
+                <i data-lucide="trophy"></i>
+                <span data-i18n="com.key"><strong>Key Achievement:</strong> launched to 100 users; the product paid back its costs within 2 months.</span>
+              </div>
+              <ul class="exp-list">
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="com.b1">Uses the exact location of the client and each master and a <strong>custom matching algorithm</strong> to assign every order to the nearest master</span></li>
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="com.b2">Built the full product end to end: <strong>Telegram Mini Apps</strong> for clients and masters, Telegram bots, a backend API, a web app and a landing page</span></li>
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="com.b3">Developed the backend API with <strong>NestJS and MongoDB</strong> and Telegram bots with Telegraf; containerized with <strong>Docker</strong> and deployed on Railway</span></li>
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="com.b4">Developed the frontends with <strong>React 19, Vite, Next.js 16</strong>, Telegram Mini Apps SDK and Tailwind CSS</span></li>
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="com.b5">Accelerated development with <strong>Claude Code</strong> as an AI pair programmer across the whole stack — from scaffolding to refactoring — shipping the backend, bots, Mini Apps, web app and landing page in <strong>1 month</strong></span></li>
+              </ul>
+              <div class="exp-tags">
+                <span class="tag">TypeScript</span><span class="tag">NestJS</span><span class="tag">MongoDB</span>
+                <span class="tag">Docker</span><span class="tag">Railway</span><span class="tag">Telegraf</span>
+                <span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Tailwind CSS</span>
+                <span class="tag">Claude Code</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rocket Tech -->
+          <div class="timeline-item animate-fade-up delay-1">
+            <div class="timeline-dot"></div>
+            <div class="exp-card">
+              <div class="exp-header">
+                <div class="exp-icon-wrap">
+                  <i data-lucide="rocket"></i>
+                </div>
+                <div class="exp-meta">
+                  <h3 class="exp-title">Senior Frontend Developer</h3>
+                  <p class="exp-company">Rocket Tech</p>
+                  <p class="exp-period" data-i18n="rt.period">May 2024 – Present</p>
+                </div>
+                <span class="exp-badge" data-i18n="badge.current">Current</span>
+              </div>
+              <p class="exp-project" data-i18n="rt.project">
+                <strong>BBusiness</strong> — B2B internet banking for legal entities at Bereke Bank (Kazakhstan). <em>~150 people on the project.</em>
+              </p>
+              <ul class="exp-list">
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="rt.b1">Architected the frontend around <strong>Feature-Sliced Design</strong> across 5+ product modules, setting clear layer boundaries that made modules easier to own, test and onboard into</span></li>
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="rt.b2">Decomposed the monolithic frontend into <strong>4 independently deployable microfrontends</strong>, reducing cross-team integration time by <strong>40%</strong></span></li>
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="rt.b3">Migrated the build from Webpack to <strong>Vite</strong>, cutting CI builds from ~18 to ~2 minutes (<strong>9×</strong>) and making daily releases possible</span></li>
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="rt.b4">Co-designed <strong>12+ REST API contracts</strong> with backend engineers and documented them in Swagger, so frontend and backend could build in parallel</span></li>
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="rt.b5">Rebuilt the WebSocket layer, raising connection reliability from ~94% to <strong>99.8%</strong> for live transaction updates</span></li>
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="rt.b6">Established the testing practice and grew coverage from 0% to <strong>70%</strong>; migrated Jest to Vitest, cutting test runs by <strong>35%</strong></span></li>
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="rt.b7">Implemented <strong>payment security flows</strong> — OTP confirmation, digital signing of payments and role-based access for company users</span></li>
+              </ul>
+              <div class="exp-tags">
+                <span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Redux Toolkit</span>
+                <span class="tag">Vite</span><span class="tag">Vitest</span><span class="tag">FSD</span>
+                <span class="tag">Microfrontends</span><span class="tag">WebSockets</span><span class="tag">Swagger</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- MBank -->
+          <div class="timeline-item animate-fade-up delay-2">
+            <div class="timeline-dot"></div>
+            <div class="exp-card">
+              <div class="exp-header">
+                <div class="exp-icon-wrap">
+                  <i data-lucide="landmark"></i>
+                </div>
+                <div class="exp-meta">
+                  <h3 class="exp-title">Frontend Team Lead</h3>
+                  <p class="exp-company">MBank</p>
+                  <p class="exp-period" data-i18n="mb.period">December 2022 – May 2024</p>
+                </div>
+              </div>
+              <p class="exp-project" data-i18n="mb.project">
+                <strong>Mbusiness</strong> — internet banking and CRM for legal entities: accounts, payments, reporting.
+              </p>
+              <ul class="exp-list">
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="mb.b1">Led and mentored a team of <strong>5 frontend developers</strong> delivering internet banking for business clients; interviewed frontend candidates for the team</span></li>
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="mb.b2">Reviewed <strong>100+ pull requests</strong> and introduced team review guidelines, shortening average PR cycle time from 3 to <strong>1.5 days</strong></span></li>
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="mb.b3">Raised test coverage from <strong>50% to 85%</strong>, contributing to a 30% drop in production bugs</span></li>
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="mb.b4">Shipped AI-powered transaction categorization using the <strong>OpenAI API</strong>, automatically classifying business transactions for clients</span></li>
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="mb.b5">Automated <strong>GitLab CI/CD</strong> pipelines, reducing deployment errors by 25% and speeding up releases</span></li>
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="mb.b6">Ran sprint planning and retrospectives, partnering with product and design to break features into deliverable increments</span></li>
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="mb.b7">Organized internal <strong>tech meetups</strong> to share frontend practices across teams</span></li>
+              </ul>
+              <div class="exp-tags">
+                <span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Next.js</span>
+                <span class="tag">OpenAI API</span><span class="tag">Redux Toolkit</span><span class="tag">Axios</span>
+                <span class="tag">GitLab CI/CD</span><span class="tag">Jira</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- NBFit -->
+          <div class="timeline-item animate-fade-up delay-3">
+            <div class="timeline-dot"></div>
+            <div class="exp-card">
+              <div class="exp-header">
+                <div class="exp-icon-wrap">
+                  <i data-lucide="dumbbell"></i>
+                </div>
+                <div class="exp-meta">
+                  <h3 class="exp-title">Middle Frontend Developer</h3>
+                  <p class="exp-company">NBFit</p>
+                  <p class="exp-period" data-i18n="nb.period">February 2022 – December 2022</p>
+                </div>
+              </div>
+              <p class="exp-project" data-i18n="nb.project">
+                <strong>NBFit</strong> — training and performance tracking platform for 1,000+ active athletes.
+              </p>
+              <ul class="exp-list">
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="nb.b1">Modernized <strong>15k+ lines</strong> of legacy vanilla JavaScript, migrating core modules to React and cutting average page load from 4.2 s to <strong>3.1 s</strong></span></li>
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="nb.b2">Stabilized the legacy codebase, closing <strong>40% of open bugs</strong> through systematic debugging</span></li>
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="nb.b3">Delivered new features — workout calendar, progress charts, leaderboard</span></li>
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="nb.b4">Built a custom HTML5 video player for workout sessions, increasing average session time by <strong>40%</strong></span></li>
+              </ul>
+              <div class="exp-tags">
+                <span class="tag">JavaScript</span><span class="tag">React</span><span class="tag">Next.js</span>
+                <span class="tag">Redux Toolkit</span><span class="tag">WebSockets</span><span class="tag">Material UI</span>
+                <span class="tag">Formik</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cash2u -->
+          <div class="timeline-item animate-fade-up delay-4">
+            <div class="timeline-dot"></div>
+            <div class="exp-card">
+              <div class="exp-header">
+                <div class="exp-icon-wrap">
+                  <i data-lucide="credit-card"></i>
+                </div>
+                <div class="exp-meta">
+                  <h3 class="exp-title">Junior Frontend Developer</h3>
+                  <p class="exp-company">Cash2u</p>
+                  <p class="exp-period" data-i18n="c2.period">September 2020 – February 2022</p>
+                </div>
+              </div>
+              <p class="exp-project" data-i18n="c2.project">
+                <strong>Cash2u</strong> — admin panel for a finance platform with remote video identity verification.
+              </p>
+              <ul class="exp-list">
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="c2.b1">Developed the admin panel frontend <strong>from scratch</strong> (React, Next.js, React-admin), giving operations staff one tool to manage transactions and user accounts</span></li>
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="c2.b2">Integrated <strong>WebRTC</strong> live video calls for remote identity verification, halving manual verification time</span></li>
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="c2.b3">Accelerated page loads by <strong>40%</strong> through lazy loading and leaner state management</span></li>
+                <li><i data-lucide="check-circle-2"></i> <span data-i18n="c2.b4">Built the <strong>Firebase backend</strong> for real-time data sync, letting the team ship without a dedicated backend developer</span></li>
+              </ul>
+              <div class="exp-tags">
+                <span class="tag">JavaScript</span><span class="tag">React</span><span class="tag">Next.js</span>
+                <span class="tag">Redux Toolkit</span><span class="tag">Firebase</span><span class="tag">WebRTC</span>
+                <span class="tag">React-admin</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-container">
+        <div class="section-header animate-fade-up">
+          <h2 class="section-title" data-i18n="skills.title">My <span class="gradient-text">Skills</span></h2>
+          <p class="section-subtitle" data-i18n="skills.subtitle">The stack I use across frontend, backend and delivery</p>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-card animate-fade-up">
+            <div class="skill-card-header">
+              <div class="skill-icon"><i data-lucide="code-xml"></i></div>
+              <h3 data-i18n="skills.languages">Languages</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">JavaScript (ES6+)</span>
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+            </div>
+          </div>
+
+          <div class="skill-card animate-fade-up delay-1">
+            <div class="skill-card-header">
+              <div class="skill-icon"><i data-lucide="monitor"></i></div>
+              <h3>Frontend</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">Redux Toolkit</span>
+              <span class="skill-tag">Zustand</span>
+              <span class="skill-tag">React Query</span>
+              <span class="skill-tag">React Router</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">Ant Design</span>
+              <span class="skill-tag">Material UI</span>
+              <span class="skill-tag">Formik</span>
+            </div>
+          </div>
+
+          <div class="skill-card animate-fade-up delay-2">
+            <div class="skill-card-header">
+              <div class="skill-icon"><i data-lucide="server"></i></div>
+              <h3>Backend</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">NestJS</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag" data-i18n="skills.restDesign">REST API design</span>
+              <span class="skill-tag">WebSockets</span>
+              <span class="skill-tag">Telegram Bot API</span>
+            </div>
+          </div>
+
+          <div class="skill-card animate-fade-up delay-3">
+            <div class="skill-card-header">
+              <div class="skill-icon"><i data-lucide="database"></i></div>
+              <h3 data-i18n="skills.db">Databases &amp; Infrastructure</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">Firebase</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Railway</span>
+              <span class="skill-tag">GitLab CI/CD</span>
+            </div>
+          </div>
+
+          <div class="skill-card animate-fade-up">
+            <div class="skill-card-header">
+              <div class="skill-icon"><i data-lucide="layers"></i></div>
+              <h3 data-i18n="skills.arch">Architecture</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Feature-Sliced Design</span>
+              <span class="skill-tag">Microfrontends</span>
+              <span class="skill-tag">Telegram Mini Apps</span>
+              <span class="skill-tag">WebRTC</span>
+              <span class="skill-tag" data-i18n="skills.perf">Performance Optimization</span>
+            </div>
+          </div>
+
+          <div class="skill-card animate-fade-up delay-1">
+            <div class="skill-card-header">
+              <div class="skill-icon"><i data-lucide="sparkles"></i></div>
+              <h3>AI</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Claude Code</span>
+              <span class="skill-tag" data-i18n="skills.aiDev">AI-assisted development</span>
+              <span class="skill-tag" data-i18n="skills.llm">LLM integration</span>
+              <span class="skill-tag">OpenAI API</span>
+            </div>
+          </div>
+
+          <div class="skill-card animate-fade-up delay-2">
+            <div class="skill-card-header">
+              <div class="skill-icon"><i data-lucide="test-tube-diagonal"></i></div>
+              <h3 data-i18n="skills.testing">Testing</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Vitest</span>
+              <span class="skill-tag">Jest</span>
+              <span class="skill-tag">React Testing Library</span>
+            </div>
+          </div>
+
+          <div class="skill-card animate-fade-up delay-2">
+            <div class="skill-card-header">
+              <div class="skill-icon"><i data-lucide="wrench"></i></div>
+              <h3 data-i18n="skills.tools">Tooling</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Vite</span>
+              <span class="skill-tag">Webpack</span>
+              <span class="skill-tag">ESLint</span>
+              <span class="skill-tag">Prettier</span>
+              <span class="skill-tag">Husky</span>
+              <span class="skill-tag">Storybook</span>
+              <span class="skill-tag">Swagger</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Jira</span>
+              <span class="skill-tag">Figma</span>
+            </div>
+          </div>
+
+          <div class="skill-card animate-fade-up delay-3">
+            <div class="skill-card-header">
+              <div class="skill-icon"><i data-lucide="users"></i></div>
+              <h3 data-i18n="skills.practices">Practices</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Code Review</span>
+              <span class="skill-tag" data-i18n="skills.mentoring">Mentoring</span>
+              <span class="skill-tag" data-i18n="skills.interviewing">Technical Interviewing</span>
+              <span class="skill-tag">Agile / Scrum</span>
+              <span class="skill-tag">Kanban</span>
+              <span class="skill-tag">SOLID</span>
+              <span class="skill-tag" data-i18n="skills.patterns">Design Patterns</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section section-alt">
+      <div class="section-container">
+        <div class="section-header animate-fade-up">
+          <h2 class="section-title"><span class="gradient-text" data-i18n="edu.title">Education</span></h2>
+          <p class="section-subtitle" data-i18n="edu.subtitle">Academic background and languages</p>
+        </div>
+
+        <div class="edu-grid">
+          <div class="edu-card animate-fade-up">
+            <div class="edu-icon-wrap">
+              <i data-lucide="graduation-cap"></i>
+            </div>
+            <div class="edu-content">
+              <h3 class="edu-title" data-i18n="edu.degree">Computer Science and Engineering</h3>
+              <p class="edu-school" data-i18n="edu.school">Kyrgyz State Technical University</p>
+              <p class="edu-period">2017 – 2021</p>
+            </div>
+          </div>
+
+          <div class="edu-card animate-fade-up delay-1">
+            <div class="edu-icon-wrap">
+              <i data-lucide="globe"></i>
+            </div>
+            <div class="edu-content">
+              <h3 class="edu-title" data-i18n="edu.languages">Languages</h3>
+              <div class="lang-list">
+                <div class="lang-item">
+                  <span class="lang-name" data-i18n="edu.english">English</span>
+                  <div class="lang-bar">
+                    <div class="lang-fill" style="width: 60%"></div>
+                  </div>
+                  <span class="lang-level">B1</span>
+                </div>
+                <div class="lang-item">
+                  <span class="lang-name" data-i18n="edu.russian">Russian</span>
+                  <div class="lang-bar">
+                    <div class="lang-fill" style="width: 100%"></div>
+                  </div>
+                  <span class="lang-level" data-i18n="edu.native">Native</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section-container">
+        <div class="section-header animate-fade-up">
+          <h2 class="section-title" data-i18n="contact.title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="section-subtitle" data-i18n="contact.subtitle">Open to full-time roles — remote or with relocation. Let's talk!</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info animate-fade-up">
+            <a href="mailto:vadim.gerasko99@gmail.com" class="contact-item" id="contact-email">
+              <div class="contact-icon"><i data-lucide="mail"></i></div>
+              <div>
+                <p class="contact-label">Email</p>
+                <p class="contact-value">vadim.gerasko99@gmail.com</p>
+              </div>
+            </a>
+            <a href="https://t.me/vadimgerasko" target="_blank" rel="noopener noreferrer" class="contact-item" id="contact-telegram">
+              <div class="contact-icon"><i data-lucide="send"></i></div>
+              <div>
+                <p class="contact-label">Telegram</p>
+                <p class="contact-value">@vadimgerasko</p>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/vadim-gerasko/" target="_blank" rel="noopener noreferrer" class="contact-item" id="contact-linkedin">
+              <div class="contact-icon"><svg class="lucide lucide-linkedin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></div>
+              <div>
+                <p class="contact-label">LinkedIn</p>
+                <p class="contact-value">linkedin.com/in/vadim-gerasko</p>
+              </div>
+            </a>
+            <a href="https://github.com/Gerasko-Vadim" target="_blank" rel="noopener noreferrer" class="contact-item" id="contact-github">
+              <div class="contact-icon"><svg class="lucide lucide-github" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></div>
+              <div>
+                <p class="contact-label">GitHub</p>
+                <p class="contact-value">github.com/Gerasko-Vadim</p>
+              </div>
+            </a>
+          </div>
+
+          <form class="contact-form animate-fade-up delay-1" id="contactForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label for="name" data-i18n="form.name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" data-i18n-ph="form.namePh" required>
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="form.email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="form.message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about the role or project..." data-i18n-ph="form.messagePh" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary form-btn" id="submitBtn">
+              <i data-lucide="send"></i>
+              <span data-i18n="form.send">Send via Email</span>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i data-lucide="check-circle"></i>
+              <span data-i18n="form.success">Your email app should open with the message ready — just press Send.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="section-container">
+      <p>© <span id="year">2026</span> <span data-i18n="footer">Vadim Gerasko. Built with ❤️ and clean code.</span></p>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
